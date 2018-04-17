@@ -5,6 +5,13 @@
 =            Generique                        =
 =============================================*/
 
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.btn {
+    margin-bottom: 10px;
+}
 .btn-primary {
     background-color: #D0021B;
     border-color: #D0021B;
@@ -15,14 +22,28 @@
         border-color: #9B0013;
     }
 
-    .btn-primary:active {
-        background-color: #5200A;
-        border-color: #5200A;
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):focus{
+        background-color: #52000A !important;
+        border-color: #52000A !important;
     }
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: none !important;
+}
+
+input {
+    background: transparent !important;
+    border-width: 2px !important;
+    border-color: #9B9B9B !important;
+}
+
+hr {
+    margin-top: 0;
+}
 /*=============================================
 =            Login                            =
 =============================================*/
-    #login {
+#login {
         background-image: url('../img/bg-login.png');
         background-size: cover;
         background-position: center center;
@@ -41,12 +62,18 @@
     height: 100%;
 }
 
-h1 {
-
+#login h1 {
+    margin-top: 0.5rem;
 }
 
-a{
-    
+#login a{
+    color:    #D0021B; 
+}
+
+
+#login form {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 
