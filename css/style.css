@@ -1,2 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans|Quicksand');
 
+
+/*=============================================
+=            Login                            =
+=============================================*/
+
+#login {
+    background-image: url('../img/bg-login.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#login .card {
+    width: 18rem;
+}
+
+/*=====  End of Login                  ======*/
