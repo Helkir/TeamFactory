@@ -134,3 +134,13 @@ input {
 #create-team h1{
     margin: 5px;
 }
+
+#create-team .container {
+    background-color: #FFF;
+    min-height: 727px;
+}
+
+#search-coder {
+    margin-right: 5px !important;
+}
+
