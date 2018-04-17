@@ -2,17 +2,34 @@
 
 
 /*=============================================
-=            Login                            =
+=            Generique                        =
 =============================================*/
 
-#login {
-    background-image: url('../img/bg-login.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    text-align: center;
+.btn-primary {
+    background-color: #D0021B;
+    border-color: #D0021B;
 }
+
+.btn-primary:hover {
+        background-color: #9B0013;
+        border-color: #9B0013;
+    }
+
+    .btn-primary:active {
+        background-color: #5200A;
+        border-color: #5200A;
+    }
+/*=============================================
+=            Login                            =
+=============================================*/
+    #login {
+        background-image: url('../img/bg-login.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        text-align: center;
+    }
 
 #login .card {
     height: 355px;
@@ -27,5 +44,10 @@
 h1 {
 
 }
+
+a{
+    
+}
+
 
 /*=====  End of Login                  ======*/
