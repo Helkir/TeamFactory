@@ -9,6 +9,10 @@ body {
     font-weight: 400;
 }
 
+a.btn-primary {
+    color: #FFF !important;
+}
+
 .btn {
     margin-bottom: 10px;
 }
@@ -31,6 +35,7 @@ body {
 
 .btn-add {
     border-radius: 0;
+    margin-bottom: 0;
 }
 
 .btn-add .btn-icon {
@@ -61,12 +66,18 @@ input {
 =            Menu                             =
 =============================================*/
 
+
 .navbar a {
     color: #D0021B;
 }
 
 .navbar {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.nav-item {
+    margin: 0 5px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /*=====  End of Menu                   ======*/
