@@ -11,10 +11,21 @@
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
+    text-align: center;
 }
 
 #login .card {
-    width: 18rem;
+    height: 355px;
+    width: 378px;
+    background-color: rgba(255,255,255, 0.75)!important;
+}
+
+#login .container {
+    height: 100%;
+}
+
+h1 {
+
 }
 
 /*=====  End of Login                  ======*/
