@@ -43,7 +43,7 @@ a.btn-primary {
 }
 
 
-input {
+input, select {
     background: transparent !important;
     border-width: 2px !important;
     border-color: #9B9B9B !important;
@@ -73,6 +73,7 @@ input {
 
 .navbar {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    background-color: #FFF;
 }
 
 .nav-item {
@@ -121,3 +122,15 @@ input {
 }
 
 /*=====  End of Login                  ======*/
+
+/*=============================================
+=            Create Team                      =
+=============================================*/
+
+#create-team{
+    background-color: #EEE;
+}
+
+#create-team h1{
+    margin: 5px;
+}
