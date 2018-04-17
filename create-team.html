@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-          crossorigin="anonymous">
+        crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-            crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-            crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
-            crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Créer une team</title>
 </head>
+
 <body id="create-team">
     <!-- Menu -->
     <nav class="navbar navbar-expand-lg">
@@ -24,7 +26,7 @@
             <strong>Team</strong> Factory
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,8 +52,12 @@
     <div class="container">
         <h1>Créer une Team</h1>
         <div class="form-row">
-            <div class="col-md-4"><input class="form-control" type="text" placeholder="ScrumMaster" /></div>
-            <div class="col-md-4"><input class="form-control" type="text" placeholder="Nom de la Team" /></div>
+            <div class="col-md-4">
+                <input class="form-control" type="text" placeholder="ScrumMaster" />
+            </div>
+            <div class="col-md-4">
+                <input class="form-control" type="text" placeholder="Nom de la Team" />
+            </div>
             <div class="col-md-4">
                 <select class="custom-select">
                     <option selected>Matière</option>
@@ -63,11 +69,73 @@
         <h3>Ajouter des codeurs</h3>
         <div class="form-row">
             <div class="col-sm-5">
-            <input id="search-coder"class="form-control" type="search" placeholder="Recherche">
+                <input id="search-coder" class="form-control" type="search" placeholder="Recherche">
             </div>
-                <button class="btn btn-primary">Random</button>
+            <button class="btn btn-primary btn-random">Random</button>
         </div>
         <hr>
+        <section>
+            <h1 class="text-center">Nom de la team</h1>
+            <div class="d-flex">
+                <div class="col-sm-3">
+                    <div class="card card-user user-scrum">
+                        <div class="card-body">
+                            <div class="pp-user">
+                            </div>
+                            <h5 class="card-title text-center">Nom</h5>
+                            <p class="text-center">Entreprise</p>
+                            <span class="badge badge-pill">HTML</span>
+                            <span class="badge badge-pill">CSS</span>
+                            <span class="badge badge-pill">PHP</span>
+                            <span class="badge badge-pill">Javascript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card card-user">
+                        <div class="card-body">
+                            <div class="pp-user">
+                            </div>
+                            <h5 class="card-title text-center">Nom</h5>
+                            <p class="text-center">Entreprise</p>
+                            <span class="badge badge-pill">HTML</span>
+                            <span class="badge badge-pill">CSS</span>
+                            <span class="badge badge-pill">PHP</span>
+                            <span class="badge badge-pill">Javascript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card card-user">
+                        <div class="card-body">
+                            <div class="pp-user">
+                            </div>
+                            <h5 class="card-title text-center">Nom</h5>
+                            <p class="text-center">Entreprise</p>
+                            <span class="badge badge-pill">HTML</span>
+                            <span class="badge badge-pill">CSS</span>
+                            <span class="badge badge-pill">PHP</span>
+                            <span class="badge badge-pill">Javascript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card card-user">
+                        <div class="card-body">
+                            <div class="pp-user">
+                            </div>
+                            <h5 class="card-title text-center">Nom</h5>
+                            <p class="text-center">Entreprise</p>
+                            <span class="badge badge-pill">HTML</span>
+                            <span class="badge badge-pill">CSS</span>
+                            <span class="badge badge-pill">PHP</span>
+                            <span class="badge badge-pill">Javascript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
+
 </html>
