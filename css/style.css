@@ -1,35 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans|Quicksand');
-
-
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Quicksand:300,400,700');
 /*=============================================
 =            Generique                        =
 =============================================*/
 
 body {
     font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .btn {
     margin-bottom: 10px;
 }
+
 .btn-primary {
     background-color: #D0021B;
     border-color: #D0021B;
 }
 
 .btn-primary:hover {
-        background-color: #9B0013;
-        border-color: #9B0013;
-    }
-
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):focus{
-        background-color: #52000A !important;
-        border-color: #52000A !important;
-    }
-
-.btn-primary:focus, .btn-primary.focus {
-    box-shadow: none !important;
+    background-color: #9B0013;
+    border-color: #9B0013;
 }
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled):focus {
+    background-color: #52000A !important;
+    border-color: #52000A !important;
+}
+
+.btn-add {
+    border-radius: 0;
+}
+
+.btn-add .btn-icon {
+    margin-right: 5px;
+}
+
 
 input {
     background: transparent !important;
@@ -40,22 +47,49 @@ input {
 hr {
     margin-top: 0;
 }
+
+/* Diasble box-shadow on focus */
+.btn-primary:focus,
+.btn-primary.focus,
+input {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+
+/*=============================================
+=            Menu                             =
+=============================================*/
+
+.navbar a {
+    color: #D0021B;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+/*=====  End of Menu                   ======*/
+
+
+
 /*=============================================
 =            Login                            =
 =============================================*/
+
 #login {
-        background-image: url('../img/bg-login.png');
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        height: 100vh;
-        text-align: center;
-    }
+    background-image: url('../img/bg-login.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+}
 
 #login .card {
     height: 355px;
     width: 378px;
-    background-color: rgba(255,255,255, 0.75)!important;
+    background-color: rgba(255, 255, 255, 0.75) !important;
 }
 
 #login .container {
@@ -66,15 +100,13 @@ hr {
     margin-top: 0.5rem;
 }
 
-#login a{
-    color:    #D0021B; 
+#login a {
+    color: #D0021B;
 }
-
 
 #login form {
     margin-left: 15px;
     margin-right: 15px;
 }
-
 
 /*=====  End of Login                  ======*/
