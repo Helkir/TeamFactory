@@ -41,6 +41,10 @@ a.btn-primary {
     border-color: #52000A !important;
 }
 
+.btn-default {
+    border-color: #D0021B;
+}
+
 .btn-add {
     border-radius: 0;
     margin-bottom: 0;

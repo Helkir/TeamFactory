@@ -19,7 +19,7 @@
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
     <script src="./js/db.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <title>Login</title>
+    <title>Sign Up</title>
 
 </head>
 
@@ -29,10 +29,12 @@
             <h1>
                 <strong>Team</strong> Factory</h1>
             <hr>
-            <p>Login</p>
+            <p>S'inscrire</p>
             <form>
                 <div class="form-group">
-
+                    <input type="text" name="username" class="form-control" id="username" placeholder="Username">
+                </div>
+                <div class="form-group">
                     <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
                 </div>
                 <div class="form-group">
@@ -40,9 +42,6 @@
                 </div>
                 <button type="submit" class="btn btn-primary" onclick="auth()">Connexion</button>
             </form>
-            <small>
-                <a href="/../oubli">mot de passe oublié ?</a>
-            </small>
 
         </div>
 
