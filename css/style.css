@@ -80,7 +80,17 @@ input {
     color: #D0021B;
     margin-bottom: 10px;
 }
+/* Mathilde je pense que cette partie est générique */
 
+.pp-user {
+    height: 119px;
+    width: 119px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 auto 10px;
+    position: relative;
+    text-align: center;
+}
 
 /*=============================================
 =            Menu                             =
@@ -178,7 +188,7 @@ input {
     background-color: #ccc;
 }
 
-.pp-user {
+/*.pp-user {
     height: 119px;
     width: 119px;
     border-radius: 50%;
@@ -186,7 +196,7 @@ input {
     margin: 0 auto 10px;
     position: relative;
     text-align: center;
-}
+}*/
 
 .user-scrum .pp-user{
 background-image: url('../img/RobertPaulson.png');
@@ -211,3 +221,18 @@ font-size: 30px;
 line-height: 119px;
 left: 45%;
 }
+
+/*=====  End of Create-team                  ======*/
+
+/*=============================================
+=            User-list                        =
+=============================================*/
+
+#user-list .card {
+    background-color: #FFF;
+    margin: 20px 5px 0;
+    min-height: 355px;
+    max-height: 500px;
+}
+
+/*=====  End of User-list                  ======*/
