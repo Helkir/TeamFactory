@@ -198,7 +198,7 @@ input {
     text-align: center;
 }*/
 
-.user-scrum .pp-user{
+#create-team .user-scrum .pp-user{
 background-image: url('../img/RobertPaulson.png');
 content: "";
 border-radius: 50%;
@@ -211,7 +211,7 @@ background-color: rgba(208, 2, 27, .5);
 background-size: cover;
 }
 
-.user-scrum .pp-user:before {
+#create-team .user-scrum .pp-user:before {
 
 color: #fff;
 position: absolute;
@@ -233,6 +233,79 @@ left: 45%;
     margin: 20px 5px 0;
     min-height: 355px;
     max-height: 500px;
+}
+
+/*=====  End of User-list                  ======*/
+
+
+/*=============================================
+=            Profile                          =
+=============================================*/
+
+
+#user-profile .pp-user {
+
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 auto 10px;
+    position: relative;
+    text-align: center;
+    background-image: url('../img/roro.jpg');
+    content: "";
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    left: 0;
+    top: 0;
+    background-color: rgba(208, 2, 27, .5);
+    /* position: absolute; */
+    background-size: cover;
+}
+
+#user-profile h2{
+    margin:auto;
+}
+
+#user-profile .liste-social li{
+    list-style:none;
+    display:inline;
+    color:#CCC;
+
+}
+.liste-social{
+    margin:0 auto;
+    width:205px;
+}
+
+#user-profile h1{
+    font-size:28px;
+}
+
+#user-profile h1 .group 
+{
+    font-size: 15px !important;
+    color:#9b9b9b;
+}
+#user-profile h2 {
+    color: #3D3D3D;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#user-profile .badge-pill {
+    padding: 10px;
+    border: 2px solid #D0021B;
+    color: #D0021B;
+    margin-bottom: 10px;
+    margin-right:5px;
+}
+
+#user-profile .section{
+    margin-left:20px;
+}
+
+#user-profile .fa-2x {
+    margin-right: 10px;
 }
 
 /*=====  End of User-list                  ======*/
