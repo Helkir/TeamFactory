@@ -20,7 +20,7 @@
   const btnLogOut = document.getElementById('logOut');
   
   //login even
-  btnSignIn.addEventListener('click', e =>{
+/*   btnSignIn.addEventListener('click', e =>{
     //get Email et password
     const username = txtusername.value;
     const name = txtname.value;
@@ -34,17 +34,14 @@
   promise.catch(e => console.log(e.message));
   
   
-  });
+  }); */
   
   //add SignUp even
   btnSignUp.addEventListener('click', e => {
-    const username = txtusername.value;
-    const name = txtname.value;
-    const surname = txtsurname.value;
     const email = txtEmail.value;
     const password = txtPassword.value;
     const auth = firebase.auth();
-  console.log("here");
+    console.log("here");
     //sign In
     const promise = auth.createUserWithEmailAndPassword(email, password);
     promise.catch(e => console.log(e.message));
@@ -54,7 +51,7 @@
   firebase.auth().onAuthStateChanged(firebaseUser => {
     if (firebaseUser) {
       console.log(firebaseUser);
-      document.location.href="http://google.com";
+      document.location.href="../dashboard.html";
       //btnLogOut.classList.remove('hide');
     } else {
       console.log('pas auth');
