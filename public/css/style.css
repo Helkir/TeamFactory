@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Quicksand:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|Quicksand:300,400,700");
+
 /*=============================================
 =            Generique                        =
 =============================================*/
@@ -7,13 +8,15 @@ body {
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    background-color: #EEE;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-h1, h2{
+
+h1, h2 {
     color: #D0021B;
 }
 
@@ -21,6 +24,14 @@ a.btn-primary {
     color: #FFF !important;
 }
 
+ul {
+    padding: 0;
+}
+
+
+/*=============================================
+=            Button                           =
+=============================================*/
 .btn {
     margin-bottom: 10px;
 }
@@ -41,6 +52,7 @@ a.btn-primary {
     border-color: #52000A !important;
 }
 
+
 .btn-default {
     border-color: #D0021B;
 }
@@ -54,6 +66,51 @@ a.btn-primary {
     margin-right: 5px;
 }
 
+.btn-burger {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.btn-burger svg {
+    width: 25px;
+    height: auto;
+/*    Change the color here : */
+    fill: #ccc;
+}
+
+#bar-1,
+#bar-3 {
+    transition: .2s;
+    transform-origin: center;
+}
+
+.btn-burger.active svg #bar-1 {
+    transform: rotate(45deg);
+    
+}
+
+.btn-burger.active svg #bar-2 {
+    animation: fadeOut .2s forwards ease-in-out;
+}
+
+.btn-burger.active svg #bar-3 {
+    transform:  rotate(-45deg);
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+/*=====  End of Button                 ======*/
 
 input, select {
     background: transparent !important;
@@ -85,11 +142,27 @@ input {
     margin-bottom: 10px;
 }
 
+/* Mathilde je pense que cette partie est générique */
+
+.pp-user {
+    position: relative;
+    height: 119px;
+    width: 119px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 15px;
+    min-height: 727px;
+}
 
 /*=============================================
 =            Menu                             =
 =============================================*/
-
 
 .navbar a {
     color: #D0021B;
@@ -97,8 +170,16 @@ input {
 
 .navbar {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     background-color: #FFF;
     margin-bottom: 30px;
+}
+
+@media screen and (max-width: 540px) {
+    .navbar {
+        margin-bottom: 10px;
+    }
 }
 
 .nav-item {
@@ -108,7 +189,7 @@ input {
 
 /*=====  End of Menu                   ======*/
 
-
+=======
 
 /*=============================================
 =            Login                            =
@@ -125,6 +206,7 @@ input {
 
 #login .card {
     min-height: 355px;
+    height: 355px;
     width: 378px;
     background-color: rgba(255, 255, 255, 0.75) !important;
 }
@@ -151,6 +233,7 @@ input {
 /*=============================================
 =            Create Team                      =
 =============================================*/
+
 
 #create-team{
     background-color: #EEE;
@@ -182,6 +265,26 @@ input {
     background-color: #ccc;
 }
 
+#create-team h1 {
+    margin: 15px 0;
+}
+
+.btn-random {
+    position: relative;
+    margin-left: 20px;
+}
+
+.btn-random:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -14px;
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #ccc;
+}
+
 .pp-user {
     height: 119px;
     width: 119px;
@@ -190,6 +293,7 @@ input {
     margin: 0 auto 10px;
     position: relative;
     text-align: center;
+
 }
 
 .user-scrum .pp-user:after{
@@ -213,3 +317,115 @@ font-size: 30px;
 line-height: 119px;
 left: 45%;
 }
+
+#create-team .user-scrum .pp-user {
+    top: 0;
+    left: 0;
+    background-image: url("../img/RobertPaulson.png");
+    content: "";
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(208, 2, 27, 0.5);
+
+    /* position: absolute; */
+    background-size: cover;
+}
+
+#create-team .user-scrum .pp-user:before {
+    position: absolute;
+    left: 45%;
+    color: #fff;
+    z-index: 999;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 119px;
+}
+
+/*=====  End of Create-team                  ======*/
+
+/*=============================================
+=            User-list                        =
+=============================================*/
+
+#user-list .card {
+    background-color: #FFF;
+    margin: 20px 5px 0;
+    min-height: 355px;
+    max-height: 500px;
+}
+
+/*=====  End of User-list                  ======*/
+
+/*=============================================
+=            Profile                          =
+=============================================*/
+
+#user-profile .pp-user {
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 auto 10px;
+    text-align: center;
+    background-image: url("../img/roro.jpg");
+    content: "";
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    background-color: rgba(208, 2, 27, 0.5);
+
+    /* position: absolute; */
+    background-size: cover;
+}
+
+@media screen and (max-width: 995px) {
+    #user-profile .pp-user {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+#user-profile h2 {
+    margin: auto;
+}
+
+#user-profile .liste-social li {
+    list-style: none;
+    color: #CCC;
+}
+
+#user-profile h1 {
+    font-size: 28px;
+}
+
+#user-profile h1 .group {
+    position: relative;
+    font-size: 15px !important;
+    color: #9b9b9b;
+    margin-left: 15px;
+}
+
+#user-profile h1 .group:before {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    content: "/";
+}
+
+#user-profile h2 {
+    color: #3D3D3D;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#user-profile .badge-pill {
+    padding: 10px;
+    border: 2px solid #D0021B;
+    color: #D0021B;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+/*=====  End of User-list                  ======*/
