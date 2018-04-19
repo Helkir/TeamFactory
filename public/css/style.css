@@ -373,6 +373,14 @@ left: 45%;
     max-height: 500px;
 }
 
+#user-list input {
+    margin-bottom: 0;
+}
+
+#user-list .toolbar {
+    box-shadow: inherit;
+}
+
 /*=====  End of User-list                  ======*/
 
 /*=============================================
