@@ -45,6 +45,36 @@ footer .container {
     min-height: inherit;
 }
 
+.ellipsis{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.overflow {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(208, 2, 27, .6);
+    z-index: 999;
+    transition-duration: .7s;
+}
+
+.img-featured {
+    overflow: hidden;
+    position: relative;
+}
+
+.img-article:hover .overflow,
+.img-featured:hover .overflow {
+    opacity: 1;
+    cursor: pointer;
+}
+
 /*=============================================
 =            Button                           =
 =============================================*/
@@ -83,6 +113,15 @@ footer .container {
 .btn-add .btn-icon {
     margin-right: 5px;
 }
+
+.btn-add:hover .btn-icon{
+    transform: rotate(180deg);
+  }
+  
+ .btn-icon{
+    display: inline-block;/* mandatory to be able to use transform */
+    transition: 1s all;
+  }
 
 .btn-burger {
     border: none;
@@ -185,6 +224,11 @@ input {
 
 .navbar a {
     color: #D0021B;
+    transition-duration: .5s;
+}
+
+.navbar a:hover {
+    color: #9B0013;
 }
 
 .navbar {
@@ -475,6 +519,7 @@ left: 45%;
     width: 100px;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
 }
 
 .img-article img{
@@ -490,6 +535,12 @@ left: 45%;
     color: #fff;
     text-align: center;
     margin-right: 10px;
+    transition-duration: .5s;
+}
+
+.date:hover {
+    background-color: #9B0013;
+    cursor: pointer;
 }
 
 .date p {
@@ -503,13 +554,6 @@ left: 45%;
 .desc {
     width: calc(100% - 60px);
     overflow: hidden;
-}
-
-.ellipsis{
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .select-group {
