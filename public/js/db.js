@@ -9,45 +9,38 @@
     };
     firebase.initializeApp(config);
   
-  //Element
-  const txtusername = document.getElementById('username');
-  const txtname = document.getElementById('name');
-  const txtsurname = document.getElementById('surname');
+  //Elements
   const txtEmail = document.getElementById('email');
   const txtPassword = document.getElementById('password');
   const btnSignUp = document.getElementById('signUp');
   const btnSignIn = document.getElementById('signIn');
-  const btnLogOut = document.getElementById('logOut');
+  //const btnLogOut = document.getElementById('logOut');
   
-  //login even
-/*   btnSignIn.addEventListener('click', e =>{
-    //get Email et password
-    const username = txtusername.value;
-    const name = txtname.value;
-    const surname = txtsurname.value;
+  //Login
+  btnSignIn.addEventListener('click', e =>{
+  // Get Email and password
   const email = txtEmail.value;
   const password = txtPassword.value;
   const auth = firebase.auth();
   
-  //sign In
+  //Sign In
   const promise = auth.signInWithEmailAndPassword(email, password);
   promise.catch(e => console.log(e.message));
+  });
   
-  
-  }); */
-  
-  //add SignUp even
+  //Sign Up
   btnSignUp.addEventListener('click', e => {
+  // Get Email and password
     const email = txtEmail.value;
     const password = txtPassword.value;
     const auth = firebase.auth();
     console.log("here");
-    //sign In
+    // Sign up
     const promise = auth.createUserWithEmailAndPassword(email, password);
     promise.catch(e => console.log(e.message));
   });
   
-  //voir si connecter
+  //Check if user is connected
   firebase.auth().onAuthStateChanged(firebaseUser => {
     if (firebaseUser) {
       console.log(firebaseUser);

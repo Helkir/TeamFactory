@@ -55,6 +55,8 @@ ul {
 
 .btn-default {
     border-color: #D0021B;
+    color: #D0021B;
+    background-color: transparent;
 }
 
 .btn-add {
@@ -189,8 +191,6 @@ input {
 
 /*=====  End of Menu                   ======*/
 
-=======
-
 /*=============================================
 =            Login                            =
 =============================================*/
@@ -213,6 +213,7 @@ input {
 
 #login .container {
     height: 100%;
+    background-color: transparent;
 }
 
 #login h1 {
