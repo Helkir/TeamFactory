@@ -1,3 +1,3 @@
 $( ".cog" ).click(function() {
-    $( "#user-profile" ).toggleClass( "modify" );
+    $( "#my-profile" ).toggleClass( "modify" );
   });

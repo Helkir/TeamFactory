@@ -588,6 +588,10 @@ left: 45%;
     border: none;
     background: transparent;
     color: #3D3D3D;
+
+}
+#my-profile .cog:hover {
+    cursor: pointer;
 }
 
 #my-profile .social-icon {
@@ -611,6 +615,20 @@ left: 45%;
 #my-profile .form-check-label {
     margin-bottom: 10px;
     margin-right: 5px;
+}
+
+#header-edit, #section-edit {
+    display: none;
+}
+
+.modify #header-edit,
+.modify #section-edit {
+display: block;
+}
+
+.modify #header-visu,
+.modify #section-visu {
+display: none;
 }
 
 /*=====  End of My-profile             ======*/
