@@ -169,7 +169,7 @@ footer .container {
 
 /*=====  End of Button                 ======*/
 
-input, select {
+input, select, textarea {
     background: transparent !important;
     border-width: 2px !important;
     border-color: #9B9B9B !important;
@@ -601,10 +601,11 @@ left: 45%;
 #my-profile .cog {
     position: absolute;
     right: 15px;
-    top: 0;
+    top: 15px;
     border: none;
     background: transparent;
     color: #3D3D3D;
+    z-index: 9999;
 
 }
 #my-profile .cog:hover {
@@ -621,7 +622,7 @@ left: 45%;
 }
 
 #my-profile .bloc .form-control {
-    width: 400px;
+    max-width: 400px;
 }
 
 #my-profile .form-check {
