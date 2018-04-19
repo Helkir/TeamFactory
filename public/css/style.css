@@ -9,6 +9,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     background-color: #EEE;
+    color: #4A4A4A;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +29,21 @@ ul {
     padding: 0;
 }
 
+a{
+    color : #4A4A4A;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #4A4A4A;
+    padding: 15px;
+    color: #fff;
+}
+
+footer .container {
+    background-color: transparent;
+    min-height: inherit;
+}
 
 /*=============================================
 =            Button                           =
@@ -55,6 +71,8 @@ ul {
 
 .btn-default {
     border-color: #D0021B;
+    color: #D0021B;
+    background-color: transparent;
 }
 
 .btn-add {
@@ -158,6 +176,7 @@ input {
     background-color: #fff;
     padding: 15px;
     min-height: 727px;
+    position: relative;
 }
 
 /*=============================================
@@ -189,8 +208,6 @@ input {
 
 /*=====  End of Menu                   ======*/
 
-=======
-
 /*=============================================
 =            Login                            =
 =============================================*/
@@ -213,6 +230,7 @@ input {
 
 #login .container {
     height: 100%;
+    background-color: transparent;
 }
 
 #login h1 {
@@ -361,7 +379,7 @@ left: 45%;
 =            Profile                          =
 =============================================*/
 
-#user-profile .pp-user, #my-profile .pp-user {
+#user-profile .pp-user {
     position: relative;
     top: 0;
     left: 0;
@@ -381,46 +399,46 @@ left: 45%;
 }
 
 @media screen and (max-width: 995px) {
-    #user-profile .pp-user, #my-profile .pp-user {
+    #user-profile .pp-user {
         height: 150px;
         width: 150px;
     }
 }
 
-#user-profile h2, #my-profile h2 {
+#user-profile h2 {
     margin: auto;
 }
 
-#user-profile .liste-social li, #my-profile .liste-social li {
+#user-profile .liste-social li {
     list-style: none;
     color: #CCC;
 }
 
-#user-profile h1, #my-profile h1 {
+#user-profile h1 {
     font-size: 28px;
 }
 
-#user-profile h1 .group, #my-profile h1 .group {
+#user-profile h1 .group {
     position: relative;
     font-size: 15px !important;
     color: #9b9b9b;
     margin-left: 15px;
 }
 
-#user-profile h1 .group:before, #my-profile h1 .groupe:before {
+#user-profile h1 .group:before {
     position: absolute;
     top: 0;
     left: -15px;
     content: "/";
 }
 
-#user-profile h2, #my-profile h2 {
+#user-profile h2 {
     color: #3D3D3D;
     font-size: 20px;
     margin: 10px 0;
 }
 
-#user-profile .badge-pill, #my-profile .badge-pill {
+#user-profile .badge-pill {
     padding: 10px;
     border: 2px solid #D0021B;
     color: #D0021B;
@@ -431,12 +449,76 @@ left: 45%;
 /*=====  End of User-list                  ======*/
 
 /*=============================================
-=            My-profile                        =
+=               Dashboard                     =
 =============================================*/
 
-#my-profile .fa-cog {
-    
+.card-article {
+    border: none;
+    border-radius: 0;
 }
 
+.card-article .card-body {
+    padding-top: 0 !important;
+}
 
-/*=====  End of My-profile                  ======*/
+.img-article {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.img-article img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.date {
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: #D0021B;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.date p {
+    margin-bottom: 0;
+}
+
+.date p.mois {
+    font-size: .8rem;
+}
+
+.desc {
+    width: calc(100% - 60px);
+    overflow: hidden;
+}
+
+.ellipsis{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.select-group {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    z-index: 9999;
+    color: #fff;
+    border-color: #fff;
+}
+
+.week {
+    background-color: rgba(0, 0, 0, .2);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 10px;
+}
