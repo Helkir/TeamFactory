@@ -379,7 +379,7 @@ left: 45%;
 =            Profile                          =
 =============================================*/
 
-#user-profile .pp-user {
+#user-profile .pp-user, #my-profile .pp-user {
     position: relative;
     top: 0;
     left: 0;
@@ -399,46 +399,46 @@ left: 45%;
 }
 
 @media screen and (max-width: 995px) {
-    #user-profile .pp-user {
+    #user-profile .pp-user, #my-profile .pp-user{
         height: 150px;
         width: 150px;
     }
 }
 
-#user-profile h2 {
+#user-profile h2, #my-profile H2{
     margin: auto;
 }
 
-#user-profile .liste-social li {
+#user-profile .liste-social li, #my-profile .liste-social li{
     list-style: none;
     color: #CCC;
 }
 
-#user-profile h1 {
+#user-profile h1, #my-profile h1{
     font-size: 28px;
 }
 
-#user-profile h1 .group {
+#user-profile h1 .group, #my-profile h1 .group{
     position: relative;
     font-size: 15px !important;
     color: #9b9b9b;
     margin-left: 15px;
 }
 
-#user-profile h1 .group:before {
+#user-profile h1 .group:before, #my-profile h1 .group:before{
     position: absolute;
     top: 0;
     left: -15px;
     content: "/";
 }
 
-#user-profile h2 {
+#user-profile h2, #my-profile h2{
     color: #3D3D3D;
     font-size: 20px;
     margin: 10px 0;
 }
 
-#user-profile .badge-pill {
+#user-profile .badge-pill, #my-profile .badge-pill{
     padding: 10px;
     border: 2px solid #D0021B;
     color: #D0021B;
@@ -522,3 +522,43 @@ left: 45%;
     width: 100%;
     padding: 5px 10px;
 }
+
+/*=====  End of Dashboard              ======*/
+
+/*=============================================
+=               My-profile                     =
+=============================================*/
+
+#my-profile .cog {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    border: none;
+    background: transparent;
+    color: #3D3D3D;
+}
+
+#my-profile .social-icon {
+    width: 32px;
+    margin-right: 5px;
+}
+
+#my-profile .input-group {
+    margin-bottom: 5px;
+}
+
+#my-profile .bloc .form-control {
+    width: 400px;
+}
+
+#my-profile .form-check {
+    margin: 0;
+    margin-left: 5px;
+}
+
+#my-profile .form-check-label {
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+/*=====  End of My-profile             ======*/
