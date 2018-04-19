@@ -33,6 +33,18 @@ a{
     color : #4A4A4A;
 }
 
+footer {
+    margin-top: 30px;
+    background-color: #4A4A4A;
+    padding: 15px;
+    color: #fff;
+}
+
+footer .container {
+    background-color: transparent;
+    min-height: inherit;
+}
+
 /*=============================================
 =            Button                           =
 =============================================*/
@@ -164,6 +176,7 @@ input {
     background-color: #fff;
     padding: 15px;
     min-height: 727px;
+    position: relative;
 }
 
 /*=============================================
@@ -194,8 +207,6 @@ input {
 }
 
 /*=====  End of Menu                   ======*/
-
-=======
 
 /*=============================================
 =            Login                            =
@@ -441,3 +452,73 @@ left: 45%;
 =               Dashboard                     =
 =============================================*/
 
+.card-article {
+    border: none;
+    border-radius: 0;
+}
+
+.card-article .card-body {
+    padding-top: 0 !important;
+}
+
+.img-article {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.img-article img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.date {
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: #D0021B;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.date p {
+    margin-bottom: 0;
+}
+
+.date p.mois {
+    font-size: .8rem;
+}
+
+.desc {
+    width: calc(100% - 60px);
+    overflow: hidden;
+}
+
+.ellipsis{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.select-group {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    z-index: 9999;
+    color: #fff;
+    border-color: #fff;
+}
+
+.week {
+    background-color: rgba(0, 0, 0, .2);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 10px;
+}
