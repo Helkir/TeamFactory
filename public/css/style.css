@@ -458,7 +458,7 @@ left: 45%;
     }
 }
 
-#user-profile h2, #my-profile H2{
+#user-profile h2, #my-profile h2{
     margin: auto;
 }
 
@@ -478,7 +478,8 @@ left: 45%;
     margin-left: 15px;
 }
 
-#user-profile h1 .group:before, #my-profile h1 .group:before{
+#user-profile h1 .group:before, 
+#my-profile h1 .group:before{
     position: absolute;
     top: 0;
     left: -15px;
