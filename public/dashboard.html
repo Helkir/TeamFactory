@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Team Factory</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -16,8 +17,21 @@
         crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Team Factory</title>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+      
+        <!-- update the version number as needed -->
+        <script defer src="/__/firebase/4.12.1/firebase-app.js"></script>
+        <!-- include only the Firebase features as you need -->
+        <script defer src="/__/firebase/4.12.1/firebase-auth.js"></script>
+        <script defer src="/__/firebase/4.12.1/firebase-database.js"></script>
+        <script defer src="/__/firebase/4.12.1/firebase-messaging.js"></script>
+        <script defer src="/__/firebase/4.12.1/firebase-storage.js"></script>
+        <!-- initialize the SDK after all desired features are loaded -->
+        <script defer src="/__/firebase/init.js"></script>
 </head>
 
 <body id="dashboard">
@@ -60,8 +74,8 @@
                     </li>
                     
                     <li class="nav-item">
-                            <a class="nav-link" href="./index.html">
-                                <span class="btn-icon">
+                            <a class="nav-link">
+                                <span class="btn-icon logOut">
                                     <i class="fas fa-power-off"></i>
                                 </span>
                             </a>
@@ -225,7 +239,4 @@
     </footer>
 
 </body>
-
 </html>
-<script src="./js/db.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
